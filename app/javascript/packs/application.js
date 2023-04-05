@@ -8,6 +8,12 @@ import Turbolinks from "turbolinks"
 import * as ActiveStorage from "@rails/activestorage"
 import "channels"
 
+// This is an import for bootstrap
+import "bootstrap"
+
+// This is your stylesheet file where you will write all the styling code.
+import "../stylesheets/application" 
+
 Rails.start()
 Turbolinks.start()
 ActiveStorage.start()
