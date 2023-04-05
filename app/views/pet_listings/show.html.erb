@@ -40,5 +40,7 @@
   <%= @pet_listing.date_posted %>
 </p>
 
-<%= link_to 'Edit', edit_pet_listing_path(@pet_listing) %> |
-<%= link_to 'Back', pet_listings_path %>
+<button type="button" class="btn btn-info">
+  <%= link_to 'Edit', edit_pet_listing_path(@pet_listing) %> |
+  <%= link_to 'Back', pet_listings_path %>
+</button>

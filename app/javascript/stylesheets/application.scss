@@ -1,1 +1,166 @@
+// Place all the styles related to the Pet_Listings controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: https://sass-lang.com/
 @import "~bootstrap/scss/bootstrap";
+@import url('https://fonts.googleapis.com/css?family=Merriweather:400,700');
+
+$white: white;
+$black: black;
+
+.navbar {
+        margin-bottom: 0;
+        background: $black;
+}
+
+body {
+        background: $black;
+        color: $white;
+        font-family: 'Merriweather', sans-serif;
+}
+
+h1,
+h2 {
+        font-weight: bold;
+}
+
+p {
+        font-size: 16px;
+        color: $white;
+}
+
+a:visited {
+        color: $black;
+}
+
+.jumbotron {
+        background: #0048CD;
+        color: $white;
+        text-align: center;
+        p {
+                color: $white;
+                font-size: 26px;
+        }
+}
+
+.link {
+        color: $white;
+}
+
+.btn-primary {
+        color: $white;
+        border-color: $white;
+        margin-bottom: 5px;
+}
+
+.btn-sm {
+        background-color: $white;
+        display: inline-block;
+}
+
+img,
+video,
+audio {
+        margin-top: 20px;
+        max-width: 80%;
+}
+
+caption {
+
+        float: left;
+        clear: both;
+
+}
+
+/*h1 {
+    font-family: Helvetica, Geneva, Arial, sans-serif;
+    font-size: xx-large;
+    font-color: #000;
+    background-color: #fff;
+}
+
+thead{
+    font-family: Helvetica, Geneva, Arial, sans-serif;
+    font-size: large;
+    font-color: #fff;
+    color: #fff;
+    background-color: rgb(3, 3, 3);
+}
+
+table {
+    font-family: Helvetica, Geneva, Arial, sans-serif;
+    font-size: large;
+    font-color: #000;
+    background-color: rgb(212, 213, 214);
+}
+
+body {
+    font-family: Helvetica, Geneva, Arial, sans-serif;
+    font-size: large;
+    font-color: #000;
+    background-color: #fff;
+ }
+
+ a:link, a:active, a:visited {
+    color: #56135f;
+ }
+ 
+ input { 
+    margin-bottom: 5px;
+ }
+ 
+ p { 
+    font-family: Helvetica, Geneva, Arial, sans-serif;
+    font-size: large;
+    font-color: #000;
+    background-color: #fff;    
+    line-height: 150%;
+ }
+
+
+ div#container {
+    width: 760px;
+    margin: 0 auto;
+ }
+ 
+ div#header {
+    text-align: center;
+    padding-bottom: 15px;
+ }
+ 
+ div#content {
+    float: left;
+    width: 450px;
+    padding: 10px;
+ }
+ 
+ div#content h3 {
+    margin-top: 15px;
+ }
+ 
+ ul#books {
+    list-style-type: none;
+ }
+ 
+ ul#books li {
+    line-height: 140%;
+ }
+ 
+ div#sidebar {
+    width: 200px;
+    margin-left: 480px;
+ }
+ 
+ ul#subjects {
+    width: 700px;
+    text-align: center;
+    padding: 5px;
+    background-color: #ececec;
+    border: 1px solid #ccc;
+    margin-bottom: 20px;
+ }
+ 
+ ul#subjects li {
+    display: inline;
+    padding-left: 5px;
+ }
+ */

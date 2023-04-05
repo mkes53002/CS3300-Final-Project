@@ -1,0 +1,25 @@
+< content_for :content do %>
+<% end %>
+
+<% content_for :content do %>
+    <div class="jumbotron text-center">
+        <h1>All Pet Listings</h1>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-6">
+                <p>
+                    <%= yield %>
+                </p>
+            </div>
+            <div class="col-lg-6">
+                <p>
+
+                    <div class="caption">You can look at lost pet listings and pet finding accoutns</div>
+                </p>
+
+            </div>
+        </div>
+    </div>
+    <% end %>
+        <%= render template: "layouts/application" %>
