@@ -1,0 +1,21 @@
+# Read about fixtures at https://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  pet_name: MyString
+  owner_contact: MyString
+  microchip_status: false
+  pet_age: 1
+  last_seen_on: 2023-04-05
+  last_seen_at: MyString
+  found_status: false
+  date_posted: 2023-04-05
+
+two:
+  pet_name: MyString
+  owner_contact: MyString
+  microchip_status: false
+  pet_age: 1
+  last_seen_on: 2023-04-05
+  last_seen_at: MyString
+  found_status: false
+  date_posted: 2023-04-05

@@ -1,0 +1,44 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <strong>Pet name:</strong>
+  <%= @pet_listing.pet_name %>
+</p>
+
+<p>
+  <strong>Owner contact:</strong>
+  <%= @pet_listing.owner_contact %>
+</p>
+
+<p>
+  <strong>Microchip status:</strong>
+  <%= @pet_listing.microchip_status %>
+</p>
+
+<p>
+  <strong>Pet age:</strong>
+  <%= @pet_listing.pet_age %>
+</p>
+
+<p>
+  <strong>Last seen on:</strong>
+  <%= @pet_listing.last_seen_on %>
+</p>
+
+<p>
+  <strong>Last seen at:</strong>
+  <%= @pet_listing.last_seen_at %>
+</p>
+
+<p>
+  <strong>Found status:</strong>
+  <%= @pet_listing.found_status %>
+</p>
+
+<p>
+  <strong>Date posted:</strong>
+  <%= @pet_listing.date_posted %>
+</p>
+
+<%= link_to 'Edit', edit_pet_listing_path(@pet_listing) %> |
+<%= link_to 'Back', pet_listings_path %>

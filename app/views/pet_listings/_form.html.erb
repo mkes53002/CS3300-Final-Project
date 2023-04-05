@@ -1,0 +1,57 @@
+<%= form_with(model: pet_listing) do |form| %>
+  <% if pet_listing.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(pet_listing.errors.count, "error") %> prohibited this pet_listing from being saved:</h2>
+
+      <ul>
+        <% pet_listing.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :pet_name %>
+    <%= form.text_field :pet_name %>
+  </div>
+
+  <div class="field">
+    <%= form.label :owner_contact %>
+    <%= form.text_field :owner_contact %>
+  </div>
+
+  <div class="field">
+    <%= form.label :microchip_status %>
+    <%= form.check_box :microchip_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :pet_age %>
+    <%= form.number_field :pet_age %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_seen_on %>
+    <%= form.date_select :last_seen_on %>
+  </div>
+
+  <div class="field">
+    <%= form.label :last_seen_at %>
+    <%= form.text_field :last_seen_at %>
+  </div>
+
+  <div class="field">
+    <%= form.label :found_status %>
+    <%= form.check_box :found_status %>
+  </div>
+
+  <div class="field">
+    <%= form.label :date_posted %>
+    <%= form.date_select :date_posted %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
+<% end %>

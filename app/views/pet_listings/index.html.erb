@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<h1>Pet Listings</h1>
+
+<table>
+  <thead>
+    <tr>
+      <th>Pet name</th>
+      <th>Owner contact</th>
+      <th>Microchip status</th>
+      <th>Pet age</th>
+      <th>Last seen on</th>
+      <th>Last seen at</th>
+      <th>Found status</th>
+      <th>Date posted</th>
+      <th colspan="3"></th>
+    </tr>
+  </thead>
+
+  <tbody>
+    <% @pet_listings.each do |pet_listing| %>
+      <tr>
+        <td><%= pet_listing.pet_name %></td>
+        <td><%= pet_listing.owner_contact %></td>
+        <td><%= pet_listing.microchip_status %></td>
+        <td><%= pet_listing.pet_age %></td>
+        <td><%= pet_listing.last_seen_on %></td>
+        <td><%= pet_listing.last_seen_at %></td>
+        <td><%= pet_listing.found_status %></td>
+        <td><%= pet_listing.date_posted %></td>
+        <td><%= link_to 'Show', pet_listing %></td>
+        <td><%= link_to 'Edit', edit_pet_listing_path(pet_listing) %></td>
+        <td><%= link_to 'Destroy', pet_listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+      </tr>
+    <% end %>
+  </tbody>
+</table>
+
+<br>
+
+<%= link_to 'New Pet Listing', new_pet_listing_path %>
