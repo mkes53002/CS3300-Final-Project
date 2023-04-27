@@ -3,11 +3,14 @@ require "rails_helper"
 RSpec.feature "Pet Listing", type: :feature do
     # Tests update pet listing feature
     context "Update Pet Listing" do
+
         # Sets up a pet listing to test edits on
         let(:pet_listing) { PetListing.create(pet_name: "Test Pet Name", owner_contact: "Test Owner Contact") }
         
         # Navigates to the edit pet listing page
         before(:each) do
+            user = FactoryBot.create(:user)
+            login_as(user)
             visit edit_pet_listing_path(pet_listing)
         end
 
@@ -52,6 +55,8 @@ RSpec.feature "Pet Listing", type: :feature do
     context "Create pet listing" do
         # Navigates to the create pet listing page
         before(:each) do
+            user = FactoryBot.create(:user)
+            login_as(user)
             visit new_pet_listing_path
         end
         
@@ -82,5 +87,26 @@ RSpec.feature "Pet Listing", type: :feature do
             click_button "Create Pet Listing"
             expect(page).to have_content("Pet Listing was successfully created")
         end 
+    end     
+
+    context "Login" do
+        scenario "should sign up" do
+            visit root_path
+            click_link 'Sign up'
+            within("form") do
+                fill_in "Email", with: "testing@test.com"
+                fill_in "Password", with: "123456"
+                fill_in "Password confirmation", with: "123456"
+                click_button "Sign up"
+            end
+            expect(page).to have_content("Welcome! You have signed up successfully.")
+        end
+       
+        scenario "should log in" do
+            user = FactoryBot.create(:user)
+            login_as(user)
+            visit root_path
+            expect(page).to have_content("Logged in")
+        end
     end            
 end
