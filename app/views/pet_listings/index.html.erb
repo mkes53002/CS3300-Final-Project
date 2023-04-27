@@ -29,8 +29,12 @@
         <td><%= pet_listing.found_status %></td>
         <td><%= pet_listing.date_posted %></td>
         <td><%= link_to 'Show', pet_listing %></td>
-        <td><%= link_to 'Edit', edit_pet_listing_path(pet_listing) %></td>
-        <td><%= link_to 'Destroy', pet_listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+
+        <% if user_signed_in? %>
+          <td><%= link_to 'Edit', edit_pet_listing_path(pet_listing) %></td>
+         <td><%= link_to 'Destroy', pet_listing, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <% end %>
+        
         </tr>
     <% end %>
   </tbody>

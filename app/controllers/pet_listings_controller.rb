@@ -1,5 +1,6 @@
 class PetListingsController < ApplicationController
   before_action :set_pet_listing, only: %i[ show edit update destroy ]
+  before_action :authenticate_user!, only: %i[ new edit create update destroy]
 
   # GET /pet_listings or /pet_listings.json
   def index
