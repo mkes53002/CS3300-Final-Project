@@ -1,4 +1,8 @@
 <!DOCTYPE html>
+
+# app/views/layouts/application.html.erb
+<html lang="en" data-color-mode="<%= (@current_user&.preferred_theme || "auto") %>">
+
 <html>
   <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">

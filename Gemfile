@@ -33,6 +33,10 @@ gem 'bootsnap', '>= 1.4.4', require: false
 # Trying to add bootstrap from ChatGPT
 gem 'bootstrap', '~> 5.1', '>= 5.1.4'
 
+# Trying to do dark mode
+gem 'preferences'
+
+
 group :production do
   gem 'pg', '~> 0.21' #for Heroku deployment
   gem 'rails_12factor'
