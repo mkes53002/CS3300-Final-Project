@@ -1,2 +1,24 @@
-<h1>Home#index</h1>
-<p>Find me in app/views/home/index.html.erb</p>
+<div class="jumbotron">
+    <div class="container">
+        <h1>Want to See Current Lost Pet Listings?</h1>
+        <p>Are you looking for lost pet info?</p>
+        <br>
+        <p>
+            <%= button_to 'Get Pet Listings Info', pet_listings_path, :method => :get,  :class => "btn btn-primary btn-lg"%>
+        </p>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-lg-6">
+            <h3>Lost pets have common behaviors</h3>
+            <p>Contrary to populat belief most lost pets tend to stick close to home and not travel far.
+            </p>
+        </div>
+        <div class="col-lg-6">
+            <h3>Cats and Dogs have different lost behaviors</h3>
+            <p>Even normally friendly animals are likely to act more scared towards people when they realize they are lost.
+            </p>
+        </div>
+    </div>
+</div>

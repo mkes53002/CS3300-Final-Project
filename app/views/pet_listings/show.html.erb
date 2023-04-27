@@ -40,7 +40,4 @@
   <%= @pet_listing.date_posted %>
 </p>
 
-<button type="button" class="btn btn-info">
-  <%= link_to 'Edit', edit_pet_listing_path(@pet_listing) %> |
-  <%= link_to 'Back', pet_listings_path %>
-</button>
+<%= link_to 'Edit', edit_pet_listing_path(@pet_listing), :class => "btn btn-primary btn-sm" %> <%= link_to 'Back', pet_listings_path, :class => "btn btn-primary btn-sm" %>
