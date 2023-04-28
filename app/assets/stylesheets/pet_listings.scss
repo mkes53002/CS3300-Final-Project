@@ -9,11 +9,12 @@ $black: black;
 .navbar {
         margin-bottom: 0;
         background: $black;
+        color: $white
 }
 
 body {
-        background: $black;
-        color: $white;
+        background: $white;
+        color: $black;
         font-family: 'Merriweather', sans-serif;
 }
 
@@ -24,16 +25,16 @@ h2 {
 
 p {
         font-size: 16px;
-        color: $white;
+        color: $black;
 }
 
 a:visited {
-        color: $black;
+        color: purple;
 }
 
 .jumbotron {
         background: #0048CD;
-        color: $white;
+        color: red;
         text-align: center;
         p {
                 color: $white;
@@ -42,18 +43,39 @@ a:visited {
 }
 
 .link {
-        color: $white;
+        color: blue;
 }
 
 .btn-primary {
-        color: $white;
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 10px;
+        color: white;
+        background-color: teal;
         border-color: $white;
         margin-bottom: 5px;
 }
 
 .btn-sm {
-        background-color: $white;
+        padding: 10px 10px;
+        font-size: 15px;
+        border-radius: 5px;
+        color: white;
+        background-color: green;
         display: inline-block;
+        border-color: $white;
+}
+
+img,
+video,
+audio {
+        margin-top: 20px;
+        max-width: 80%;
+}
+
+caption {
+        float: left;
+        clear: both;
 }
 
 img,

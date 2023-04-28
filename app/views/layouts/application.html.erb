@@ -1,6 +1,5 @@
 <!DOCTYPE html>
 
-# app/views/layouts/application.html.erb
 <html lang="en" data-color-mode="<%= (@current_user&.preferred_theme || "auto") %>">
 
 <html>
@@ -13,6 +12,8 @@
 
     <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_pack_tag 'application', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= stylesheet_link_tag 'darkmode', media: 'all' %>  
   </head>
 
   <body>

@@ -1,5 +1,16 @@
 /* app/assets/stylesheets/application.scss */
 
+body.dark-mode {
+  background-color: #1a1a1a;
+  color: #e6e6e6;
+}
+
+.card.dark-mode {
+  background-color: #282828;
+  color: #e6e6e6;
+  border-color: #474747;
+}
+
  /* Change the background color to black if the OS is on Dark Mode */ 
  //@mixin dark {
  //   body {
