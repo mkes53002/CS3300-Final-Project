@@ -2,4 +2,5 @@
 
 <%= render 'form', pet_listing: @pet_listing %>
 
-<%= link_to 'Show', @pet_listing, :class => "btn btn-primary btn-sm" %> <%= link_to 'Back', pet_listings_path, :class => "btn btn-primary btn-sm" %>
+<%= button_to 'Show', @pet_listing, :method => :get,  :class => "btn btn-blue btn-lg"%>
+<%= button_to 'Back', pet_listings_path, :method => :get,  :class => "btn btn-warning btn-lg"%>

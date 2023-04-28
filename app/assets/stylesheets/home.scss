@@ -40,6 +40,7 @@ a:visited {
                 color: $white;
                 font-size: 26px;
         }
+        padding: 12px;
 }
 
 .link {
@@ -47,21 +48,52 @@ a:visited {
 }
 
 .btn-primary {
-        padding: 10px 20px;
-        font-size: 20px;
-        border-radius: 10px;
         color: white;
         background-color: teal;
         border-color: $white;
+}
+
+.btn-info {
+        color:white;
+        background-color: #0dcaf0;
+        border-color: black;
+}
+
+.btn-warning {
+        color: white;
+        background-color: orange;
+        border-color: black;
+}
+
+.btn-success {
+       color: white;
+       background-color: green;
+       border-color: black;
+}
+
+.btn-blue {
+        color: white;
+        background-color: blue;
+        border-color: black; 
+}
+
+.btn-danger {
+        color: white;
+        background-color: red;
+        border-color: black; 
+}
+
+.btn-lg {
+        padding: 10px 20px;
+        font-size: 20px;
+        border-radius: 15px;
         margin-bottom: 5px;
 }
 
 .btn-sm {
         padding: 10px 10px;
         font-size: 15px;
-        border-radius: 5px;
-        color: white;
-        background-color: green;
+        border-radius: 10px;
         display: inline-block;
         border-color: $white;
 }

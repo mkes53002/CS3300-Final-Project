@@ -67,6 +67,6 @@ class PetListingsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def pet_listing_params
-      params.require(:pet_listing).permit(:pet_name, :owner_contact, :microchip_status, :pet_age, :last_seen_on, :last_seen_at, :found_status, :date_posted)
+      params.require(:pet_listing).permit(:pet_name, :owner_contact, :microchip_status, :pet_age, :last_seen_on, :last_seen_at, :found_status, :date_posted, :image)
     end
 end
