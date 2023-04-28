@@ -1,5 +1,12 @@
 <p id="notice"><%= notice %></p>
 
+<%  if @pet_listing.image.attached? %>
+  <!-- @pet_listing.image.present? will always return true, use attached? to check presence -->
+  <p>
+    <%= image_tag @pet_listing.image.variant(resize: "500x500") %>
+  </p>
+<% end %>
+
 <p>
   <strong>Pet name:</strong>
   <%= @pet_listing.pet_name %>
