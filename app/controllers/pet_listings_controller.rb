@@ -22,7 +22,7 @@ class PetListingsController < ApplicationController
 
   # POST /pet_listings or /pet_listings.json
   def create
-    @pet_listing = params.require(:pet_listing).permit(:petname, :owner_contact, :image)
+ #   @pet_listing = params.require(:pet_listing).permit(:petname, :owner_contact, :image)
     @pet_listing = PetListing.new(pet_listing_params)
 
     respond_to do |format|
